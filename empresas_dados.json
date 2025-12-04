@@ -29,29 +29,29 @@
           "liquidez_corrente": 2.0,
           "margem_liquida": 0.113,
           "endividamento": 0.46
-        },
-        "historico_credito": {
-          "score_credito": 842,
-          "status": "Baixo risco",
-          "limite_credito_sugerido": 1200000,
-          "eventos": {
-            "protestos": 0,
-            "acoes_judiciais": 1,
-            "inadimplencia_12_meses": false
           }
         },
-        "comparativo_setorial": {
-          "setor": "Tecnologia da Informação",
-          "media_liquidez_corrente": 1.5,
-          "media_margem_liquida": 0.09,
-          "media_endividamento": 0.55,
-          "empresa_vs_setor": {
-            "liquidez_corrente": "acima",
-            "margem_liquida": "acima",
-            "endividamento": "abaixo (melhor)"
-            }
-          }
+      "historico_credito": {
+        "score_credito": 842,
+        "status": "Baixo risco",
+        "limite_credito_sugerido": 1200000,
+        "eventos": {
+          "protestos": 0,
+          "acoes_judiciais": 1,
+          "inadimplencia_12_meses": false
         }
+      },
+      "comparativo_setorial": {
+        "setor": "Tecnologia da Informação",
+        "media_liquidez_corrente": 1.5,
+        "media_margem_liquida": 0.09,
+        "media_endividamento": 0.55,
+        "empresa_vs_setor": {
+          "liquidez_corrente": "acima",
+          "margem_liquida": "acima",
+          "endividamento": "abaixo (melhor)"
+          }
+        }  
       },
 
     {
@@ -81,27 +81,27 @@
           "liquidez_corrente": 2.17,
           "margem_liquida": 0.113,
           "endividamento": 0.35
-        },
-        "historico_credito": {
-          "score_credito": 879,
-          "status": "Baixo risco",
-          "limite_credito_sugerido": 3800000,
-          "eventos": {
-            "protestos": 0,
-            "acoes_judiciais": 0,
-            "inadimplencia_12_meses": false
-          }
-        },
-        "comparativo_setorial": {
-          "setor": "Tecnologia da Informação",
-          "media_liquidez_corrente": 1.5,
-          "media_margem_liquida": 0.09,
-          "media_endividamento": 0.55,
-          "empresa_vs_setor": {
-            "liquidez_corrente": "acima",
-            "margem_liquida": "acima",
-            "endividamento": "abaixo (melhor)"
-          }
+        }
+      },
+      "historico_credito": {
+        "score_credito": 879,
+        "status": "Baixo risco",
+        "limite_credito_sugerido": 3800000,
+        "eventos": {
+          "protestos": 0,
+          "acoes_judiciais": 0,
+          "inadimplencia_12_meses": false
+        }
+      },
+      "comparativo_setorial": {
+        "setor": "Tecnologia da Informação",
+        "media_liquidez_corrente": 1.5,
+        "media_margem_liquida": 0.09,
+        "media_endividamento": 0.55,
+        "empresa_vs_setor": {
+          "liquidez_corrente": "acima",
+          "margem_liquida": "acima",
+          "endividamento": "abaixo (melhor)"
         }
       }
     },
@@ -133,27 +133,27 @@
           "liquidez_corrente": 1.94,
           "margem_liquida": 0.086,
           "endividamento": 0.44
-        },
-        "historico_credito": {
-          "score_credito": 791,
-          "status": "Médio-Baixo risco",
-          "limite_credito_sugerido": 850000,
-          "eventos": {
-            "protestos": 0,
-            "acoes_judiciais": 2,
-            "inadimplencia_12_meses": false
-          }
-        },
-        "comparativo_setorial": {
-          "setor": "Tecnologia da Informação",
-          "media_liquidez_corrente": 1.5,
-          "media_margem_liquida": 0.09,
-          "media_endividamento": 0.55,
-          "empresa_vs_setor": {
-            "liquidez_corrente": "acima",
-            "margem_liquida": "acima",
-            "endividamento": "abaixo (melhor)"
-          }
+        }
+      },
+      "historico_credito": {
+      "score_credito": 791,
+      "status": "Médio-Baixo risco",
+      "limite_credito_sugerido": 850000,
+      "eventos": {
+        "protestos": 0,
+        "acoes_judiciais": 2,
+        "inadimplencia_12_meses": false
+      }
+    },
+    "comparativo_setorial": {
+      "setor": "Tecnologia da Informação",
+      "media_liquidez_corrente": 1.5,
+      "media_margem_liquida": 0.09,
+      "media_endividamento": 0.55,
+      "empresa_vs_setor": {
+        "liquidez_corrente": "acima",
+        "margem_liquida": "acima",
+        "endividamento": "abaixo (melhor)"
         }
       }
     },
@@ -185,27 +185,27 @@
           "liquidez_corrente": 1.77,
           "margem_liquida": 0.101,
           "endividamento": 0.43
-        },
-        "historico_credito": {
-          "score_credito": 764,
-          "status": "Médio risco",
-          "limite_credito_sugerido": 450000,
-          "eventos": {
-            "protestos": 1,
-            "acoes_judiciais": 1,
-            "inadimplencia_12_meses": false
-          }
-        },
-        "comparativo_setorial": {
-          "setor": "Tecnologia da Informação",
-          "media_liquidez_corrente": 1.5,
-          "media_margem_liquida": 0.09,
-          "media_endividamento": 0.55,
-          "empresa_vs_setor": {
-            "liquidez_corrente": "acima",
-            "margem_liquida": "acima",
-            "endividamento": "abaixo (melhor)"
-          }
+        }
+      },
+      "historico_credito": {
+        "score_credito": 764,
+        "status": "Médio risco",
+        "limite_credito_sugerido": 450000,
+        "eventos": {
+          "protestos": 1,
+          "acoes_judiciais": 1,
+          "inadimplencia_12_meses": false
+        }
+      },
+      "comparativo_setorial": {
+        "setor": "Tecnologia da Informação",
+        "media_liquidez_corrente": 1.5,
+        "media_margem_liquida": 0.09,
+        "media_endividamento": 0.55,
+        "empresa_vs_setor": {
+          "liquidez_corrente": "acima",
+          "margem_liquida": "acima",
+          "endividamento": "abaixo (melhor)"
         }
       }
     },
@@ -237,27 +237,27 @@
           "liquidez_corrente": 1.86,
           "margem_liquida": 0.074,
           "endividamento": 0.38
-        },
-        "historico_credito": {
-          "score_credito": 812,
-          "status": "Baixo risco",
-          "limite_credito_sugerido": 5000000,
-          "eventos": {
-            "protestos": 0,
-            "acoes_judiciais": 3,
-            "inadimplencia_12_meses": false
-          }
-        },
-        "comparativo_setorial": {
-          "setor": "Tecnologia da Informação",
-          "media_liquidez_corrente": 1.5,
-          "media_margem_liquida": 0.09,
-          "media_endividamento": 0.55,
-          "empresa_vs_setor": {
-            "liquidez_corrente": "acima",
-            "margem_liquida": "abaixo",
-            "endividamento": "abaixo (melhor)"
-          }
+        }
+      },
+      "historico_credito": {
+        "score_credito": 812,
+        "status": "Baixo risco",
+        "limite_credito_sugerido": 5000000,
+        "eventos": {
+          "protestos": 0,
+          "acoes_judiciais": 3,
+          "inadimplencia_12_meses": false
+        }
+      },
+      "comparativo_setorial": {
+        "setor": "Tecnologia da Informação",
+        "media_liquidez_corrente": 1.5,
+        "media_margem_liquida": 0.09,
+        "media_endividamento": 0.55,
+        "empresa_vs_setor": {
+          "liquidez_corrente": "acima",
+          "margem_liquida": "abaixo",
+          "endividamento": "abaixo (melhor)"
         }
       }
     },
@@ -289,27 +289,27 @@
           "liquidez_corrente": 2.0,
           "margem_liquida": 0.123,
           "endividamento": 0.36
-        },
-        "historico_credito": {
-          "score_credito": 729,
-          "status": "Médio risco",
-          "limite_credito_sugerido": 200000,
-          "eventos": {
-            "protestos": 0,
-            "acoes_judiciais": 0,
-            "inadimplencia_12_meses": false
-          }
-        },
-        "comparativo_setorial": {
-          "setor": "Tecnologia da Informação",
-          "media_liquidez_corrente": 1.5,
-          "media_margem_liquida": 0.09,
-          "media_endividamento": 0.55,
-          "empresa_vs_setor": {
-            "liquidez_corrente": "acima",
-            "margem_liquida": "acima",
-            "endividamento": "abaixo (melhor)"
-          }
+        }
+      },
+     "historico_credito": {
+        "score_credito": 729,
+        "status": "Médio risco",
+        "limite_credito_sugerido": 200000,
+        "eventos": {
+          "protestos": 0,
+          "acoes_judiciais": 0,
+          "inadimplencia_12_meses": false
+        }
+      },
+      "comparativo_setorial": {
+        "setor": "Tecnologia da Informação",
+        "media_liquidez_corrente": 1.5,
+        "media_margem_liquida": 0.09,
+        "media_endividamento": 0.55,
+        "empresa_vs_setor": {
+          "liquidez_corrente": "acima",
+          "margem_liquida": "acima",
+          "endividamento": "abaixo (melhor)"
         }
       }
     },
@@ -341,27 +341,27 @@
           "liquidez_corrente": 1.78,
           "margem_liquida": 0.09,
           "endividamento": 0.39
-        },
-        "historico_credito": {
-          "score_credito": 855,
-          "status": "Baixo risco",
-          "limite_credito_sugerido": 7000000,
-          "eventos": {
-            "protestos": 0,
-            "acoes_judiciais": 1,
-            "inadimplencia_12_meses": false
-          }
-        },
-        "comparativo_setorial": {
-          "setor": "Tecnologia da Informação",
-          "media_liquidez_corrente": 1.5,
-          "media_margem_liquida": 0.09,
-          "media_endividamento": 0.55,
-          "empresa_vs_setor": {
-            "liquidez_corrente": "acima",
-            "margem_liquida": "acima",
-            "endividamento": "abaixo (melhor)"
-          }
+        }
+      },
+      "historico_credito": {
+        "score_credito": 855,
+        "status": "Baixo risco",
+        "limite_credito_sugerido": 7000000,
+        "eventos": {
+          "protestos": 0,
+          "acoes_judiciais": 1,
+          "inadimplencia_12_meses": false
+        }
+      },
+      "comparativo_setorial": {
+        "setor": "Tecnologia da Informação",
+        "media_liquidez_corrente": 1.5,
+        "media_margem_liquida": 0.09,
+        "media_endividamento": 0.55,
+        "empresa_vs_setor": {
+          "liquidez_corrente": "acima",
+          "margem_liquida": "acima",
+          "endividamento": "abaixo (melhor)"
         }
       }
     }
