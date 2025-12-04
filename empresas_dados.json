@@ -1,0 +1,222 @@
+{
+  "setor": "Tecnologia da Informação",
+  "subsetor": "Software Empresarial e Serviços de TI",
+  "empresas": [
+    {
+      "nome": "TechNova Sistemas Ltda.",
+      "cnpj": "12.345.678/0001-90",
+      "porte": "Médio",
+      "ano_fundacao": 2017,
+      "localizacao": { "cidade": "São Paulo", "estado": "SP" },
+      "financeiro": {
+        "dre": {
+          "receita_liquida": 18500000,
+          "custo_bens_servicos": 6700000,
+          "lucro_bruto": 11800000,
+          "despesas_operacionais": 8900000,
+          "ebit": 2900000,
+          "despesas_financeiras": 350000,
+          "lucro_liquido": 2100000
+        },
+        "balanco": {
+          "ativo_circulante": 6200000,
+          "ativo_nao_circulante": 9800000,
+          "passivo_circulante": 3100000,
+          "passivo_nao_circulante": 4200000,
+          "patrimonio_liquido": 8700000
+        },
+        "indicadores": {
+          "liquidez_corrente": 2.0,
+          "margem_liquida": 0.113,
+          "endividamento": 0.46
+        }
+      }
+    },
+
+    {
+      "nome": "DataCore Analytics S.A.",
+      "cnpj": "45.812.930/0001-04",
+      "porte": "Médio-Grande",
+      "ano_fundacao": 2012,
+      "localizacao": { "cidade": "Curitiba", "estado": "PR" },
+      "financeiro": {
+        "dre": {
+          "receita_liquida": 42300000,
+          "custo_bens_servicos": 17800000,
+          "lucro_bruto": 24500000,
+          "despesas_operacionais": 18200000,
+          "ebit": 6300000,
+          "despesas_financeiras": 950000,
+          "lucro_liquido": 4800000
+        },
+        "balanco": {
+          "ativo_circulante": 11300000,
+          "ativo_nao_circulante": 28800000,
+          "passivo_circulante": 5200000,
+          "passivo_nao_circulante": 8700000,
+          "patrimonio_liquido": 26200000
+        },
+        "indicadores": {
+          "liquidez_corrente": 2.17,
+          "margem_liquida": 0.113,
+          "endividamento": 0.35
+        }
+      }
+    },
+
+    {
+      "nome": "Nexia Cloud Services Ltda.",
+      "cnpj": "78.192.544/0001-60",
+      "porte": "Médio",
+      "ano_fundacao": 2019,
+      "localizacao": { "cidade": "Florianópolis", "estado": "SC" },
+      "financeiro": {
+        "dre": {
+          "receita_liquida": 12800000,
+          "custo_bens_servicos": 5100000,
+          "lucro_bruto": 7700000,
+          "despesas_operacionais": 6200000,
+          "ebit": 1500000,
+          "despesas_financeiras": 200000,
+          "lucro_liquido": 1100000
+        },
+        "balanco": {
+          "ativo_circulante": 3500000,
+          "ativo_nao_circulante": 7700000,
+          "passivo_circulante": 1800000,
+          "passivo_nao_circulante": 3100000,
+          "patrimonio_liquido": 6300000
+        },
+        "indicadores": {
+          "liquidez_corrente": 1.94,
+          "margem_liquida": 0.086,
+          "endividamento": 0.44
+        }
+      }
+    },
+
+    {
+      "nome": "BlueMatrix Software Ltda.",
+      "cnpj": "11.409.823/0001-55",
+      "porte": "Pequeno-Médio",
+      "ano_fundacao": 2020,
+      "localizacao": { "cidade": "Belo Horizonte", "estado": "MG" },
+      "financeiro": {
+        "dre": {
+          "receita_liquida": 5300000,
+          "custo_bens_servicos": 2100000,
+          "lucro_bruto": 3200000,
+          "despesas_operacionais": 2500000,
+          "ebit": 700000,
+          "despesas_financeiras": 80000,
+          "lucro_liquido": 540000
+        },
+        "balanco": {
+          "ativo_circulante": 1600000,
+          "ativo_nao_circulante": 2200000,
+          "passivo_circulante": 900000,
+          "passivo_nao_circulante": 700000,
+          "patrimonio_liquido": 2200000
+        },
+        "indicadores": {
+          "liquidez_corrente": 1.77,
+          "margem_liquida": 0.101,
+          "endividamento": 0.43
+        }
+      }
+    },
+
+    {
+      "nome": "Orion Tech Labs S.A.",
+      "cnpj": "59.102.337/0001-22",
+      "porte": "Grande",
+      "ano_fundacao": 2008,
+      "localizacao": { "cidade": "Rio de Janeiro", "estado": "RJ" },
+      "financeiro": {
+        "dre": {
+          "receita_liquida": 76200000,
+          "custo_bens_servicos": 31000000,
+          "lucro_bruto": 45200000,
+          "despesas_operacionais": 37200000,
+          "ebit": 8000000,
+          "despesas_financeiras": 1600000,
+          "lucro_liquido": 5700000
+        },
+        "balanco": {
+          "ativo_circulante": 20800000,
+          "ativo_nao_circulante": 69000000,
+          "passivo_circulante": 11200000,
+          "passivo_nao_circulante": 23000000,
+          "patrimonio_liquido": 55600000
+        },
+        "indicadores": {
+          "liquidez_corrente": 1.86,
+          "margem_liquida": 0.074,
+          "endividamento": 0.38
+        }
+      }
+    },
+
+    {
+      "nome": "Lambda Digital Solutions Ltda.",
+      "cnpj": "80.933.117/0001-09",
+      "porte": "Pequeno",
+      "ano_fundacao": 2021,
+      "localizacao": { "cidade": "Recife", "estado": "PE" },
+      "financeiro": {
+        "dre": {
+          "receita_liquida": 2100000,
+          "custo_bens_servicos": 900000,
+          "lucro_bruto": 1200000,
+          "despesas_operacionais": 850000,
+          "ebit": 350000,
+          "despesas_financeiras": 40000,
+          "lucro_liquido": 260000
+        },
+        "balanco": {
+          "ativo_circulante": 600000,
+          "ativo_nao_circulante": 900000,
+          "passivo_circulante": 300000,
+          "passivo_nao_circulante": 250000,
+          "patrimonio_liquido": 950000
+        },
+        "indicadores": {
+          "liquidez_corrente": 2.0,
+          "margem_liquida": 0.123,
+          "endividamento": 0.36
+        }
+      }
+    },
+
+    {
+      "nome": "Infinitum AI Technologies S.A.",
+      "cnpj": "39.771.244/0001-03",
+      "porte": "Grande",
+      "ano_fundacao": 2015,
+      "localizacao": { "cidade": "Porto Alegre", "estado": "RS" },
+      "financeiro": {
+        "dre": {
+          "receita_liquida": 91000000,
+          "custo_bens_servicos": 35800000,
+          "lucro_bruto": 55200000,
+          "despesas_operacionais": 44800000,
+          "ebit": 10400000,
+          "despesas_financeiras": 1900000,
+          "lucro_liquido": 8200000
+        },
+        "balanco": {
+          "ativo_circulante": 24900000,
+          "ativo_nao_circulante": 82000000,
+          "passivo_circulante": 14000000,
+          "passivo_nao_circulante": 27000000,
+          "patrimonio_liquido": 65900000
+        },
+        "indicadores": {
+          "liquidez_corrente": 1.78,
+          "margem_liquida": 0.09,
+          "endividamento": 0.39
+        }
+      }
+    }
+  ]
+}
