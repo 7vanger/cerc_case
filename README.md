@@ -36,6 +36,15 @@ A solução foi desenhada utilizando uma abordagem híbrida: **Lógica Determin�
 *   **n8n (Orquestração):**
     *   Utilizado (conceitualmente/externamente) para gatilhos de entrada (ex: recebimento de um novo pedido de crédito) e conexão dos fluxos.
 
+# Google ADK e Langchain arquitetura
+<img width="1305" height="436" alt="image" src="https://github.com/user-attachments/assets/e8845765-d434-4164-a384-7db56bfa199d" />
+
+
+# n8N arquitetua
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/580d4f97-6110-4400-a0e5-32fdc4aead45" />
+
+
+
 ### Estrutura de Arquivos
 
 ```
