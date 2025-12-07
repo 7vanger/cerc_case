@@ -1,0 +1,69 @@
+{
+  "cliente_analisado": {
+    "id_cliente": "CLI_0001",
+    "dados_cadastrais": {
+      "razao_social": "Comercial Alfa Distribuição de Alimentos Ltda.",
+      "nome_fantasia": "Alfa Distribuidora",
+      "cnpj": "00.000.000/0001-00",
+      "setor": "Comércio atacadista de alimentos",
+      "cnae_principal": "4633-8/01",
+      "porte": "Médio",
+      "uf": "SP",
+      "cidade": "Campinas",
+      "anos_atividade": 9
+    },
+    "dados_financeiros": {
+      "ano_referencia": 2024,
+      "demonstracoes": {
+        "dre": {
+          "receita_liquida": 52000000.0,
+          "custo_mercadorias_vendidas": 42200000.0,
+          "despesas_operacionais": 5400000.0,
+          "despesas_financeiras": 680000.0,
+          "outras_receitas_despesas": -120000.0,
+          "lucro_liquido": 1800000.0
+        },
+        "balanco_patrimonial": {
+          "ativo_circulante": 11500000.0,
+          "ativo_nao_circulante": 6500000.0,
+          "passivo_circulante": 8200000.0,
+          "passivo_nao_circulante": 3100000.0,
+          "patrimonio_liquido": 10700000.0,
+          "ativo_total": 18000000.0,
+          "passivo_total": 11300000.0
+        }
+      },
+      "historico_resumido": [
+        {
+          "ano": 2022,
+          "receita_liquida": 44500000.0,
+          "lucro_liquido": 1450000.0
+        },
+        {
+          "ano": 2023,
+          "receita_liquida": 48600000.0,
+          "lucro_liquido": 1620000.0
+        }
+      ]
+    },
+    "dados_credito_interno": {
+      "classificacao_risco_interna": "B",
+      "limite_credito_atual": 8000000.0,
+      "exposicao_total_atual": 5650000.0,
+      "produto_principal": "Desconto de duplicatas",
+      "atrasos_ate_30d_12m": 2,
+      "atrasos_31a60d_12m": 0,
+      "atrasos_superiores_60d_24m": 0,
+      "valor_maximo_atraso_12m": 180000.0,
+      "dias_medio_atraso_12m": 6
+    },
+    "dados_bureau_externo": {
+      "score_bureau": 792,
+      "faixa_score": "Bom",
+      "protestos_24m": 0,
+      "cheques_sem_fundos_24m": 0,
+      "acoes_judiciais_relevantes": 0,
+      "comentario_resumido": "Bom histórico de crédito, sem registros negativos recentes."
+    }
+  }
+}

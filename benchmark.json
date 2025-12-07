@@ -1,0 +1,104 @@
+{  
+  "benchmark_empresas_similares": [
+    {
+      "id_cliente": "CLI_0101",
+      "dados_cadastrais": {
+        "razao_social": "Distribuidora Beta de Alimentos Ltda.",
+        "uf": "SP",
+        "porte": "Médio",
+        "cnae_principal": "4633-8/01",
+        "anos_atividade": 11
+      },
+      "indicadores_financeiros": {
+        "margem_liquida": 0.028,
+        "margem_operacional": 0.082,
+        "liquidez_corrente": 1.25,
+        "liquidez_geral": 1.15,
+        "endividamento_total": 0.70,
+        "retorno_sobre_patrimonio_liquido": 0.145,
+        "cobertura_juros": 2.90
+      },
+      "dados_credito": {
+        "classificacao_risco_interna": "B-",
+        "score_bureau": 755,
+        "percentual_inadimplencia_maior_90d_12m": 0.03
+      }
+    },
+    {
+      "id_cliente": "CLI_0102",
+      "dados_cadastrais": {
+        "razao_social": "Gamma Atacadista de Alimentos S.A.",
+        "uf": "SP",
+        "porte": "Grande",
+        "cnae_principal": "4633-8/01",
+        "anos_atividade": 15
+      },
+      "indicadores_financeiros": {
+        "margem_liquida": 0.036,
+        "margem_operacional": 0.101,
+        "liquidez_corrente": 1.55,
+        "liquidez_geral": 1.35,
+        "endividamento_total": 0.58,
+        "retorno_sobre_patrimonio_liquido": 0.182,
+        "cobertura_juros": 4.10
+      },
+      "dados_credito": {
+        "classificacao_risco_interna": "A",
+        "score_bureau": 825,
+        "percentual_inadimplencia_maior_90d_12m": 0.01
+      }
+    },
+    {
+      "id_cliente": "CLI_0103",
+      "dados_cadastrais": {
+        "razao_social": "Delta Distribuição Alimentícia Ltda.",
+        "uf": "SP",
+        "porte": "Médio",
+        "cnae_principal": "4633-8/01",
+        "anos_atividade": 7
+      },
+      "indicadores_financeiros": {
+        "margem_liquida": 0.031,
+        "margem_operacional": 0.090,
+        "liquidez_corrente": 1.32,
+        "liquidez_geral": 1.20,
+        "endividamento_total": 0.66,
+        "retorno_sobre_patrimonio_liquido": 0.158,
+        "cobertura_juros": 3.20
+      },
+      "dados_credito": {
+        "classificacao_risco_interna": "B",
+        "score_bureau": 780,
+        "percentual_inadimplencia_maior_90d_12m": 0.025
+      }
+    }
+  ],
+  "benchmark_setorial_resumido": {
+    "setor": "Comércio atacadista de alimentos",
+    "uf": "SP",
+    "porte_referencia": "Médio e Grande",
+    "fonte_dados": "Base interna fictícia e estudos setoriais fictícios",
+    "indicadores_medios": {
+      "margem_liquida_media": 0.031,
+      "margem_operacional_media": 0.091,
+      "liquidez_corrente_media": 1.37,
+      "liquidez_geral_media": 1.23,
+      "endividamento_total_medio": 0.65,
+      "retorno_sobre_patrimonio_liquido_medio": 0.162,
+      "cobertura_juros_media": 3.40,
+      "percentual_inadimplencia_maior_90d_12m_medio": 0.025
+    },
+    "faixas_comparativas": {
+      "liquidez_corrente": {
+        "abaixo_da_media": "< 1.2",
+        "na_faixa_normal": "1.2 - 1.6",
+        "acima_da_media": "> 1.6"
+      },
+      "endividamento_total": {
+        "baixo": "<= 0.55",
+        "moderado": "0.56 - 0.70",
+        "elevado": "> 0.70"
+      }
+    }
+  }
+}

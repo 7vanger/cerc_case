@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import Optional, List
 import json
 
-with open('empresas_dados.json', 'r', encoding='utf-8') as f:
+with open('empresa_dados.json', 'r', encoding='utf-8') as f:
     dados = json.load(f)
 
 @dataclass
@@ -16,7 +16,7 @@ class BalancoPatrimonial:
     passivo_total: float
     
     def liquidez_corrente(self):
-        return self.ativo_circulante / self.ativo_nao_circulante
+        return self.ativo_circulante / self.passivo_circulante
         
     def endividamento(self):
         return self.passivo_total / self.ativo_total
