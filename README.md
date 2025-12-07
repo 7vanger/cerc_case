@@ -1,6 +1,6 @@
 # Automação de Análise de Crédito - Case CERC
 
-Este projeto foi desenvolvido como parte do processo seletivo para a vaga de Engenharia de IA/Automação. O objetivo é demonstrar uma solução escalável para lidar com o aumento exponencial no volume de operações de crédito previsto com a nova regulamentação da Duplicata Escritural.
+O objetivo é demonstrar uma solução escalável para lidar com o aumento exponencial no volume de operações de crédito previsto com a nova regulamentação da Duplicata Escritural.
 
 ##  O Desafio
 
@@ -11,28 +11,22 @@ Com a entrada em vigor da regulamentação da duplicata escritural, estima-se um
 Para criar um fluxo de automação coerente e funcional, selecionei as seguintes tarefas do dataset O*NET, organizadas em uma sequência lógica de execução:
 
 1.  **Task 1: Analyze credit data and financial statements**
-    *   *O que faz:* Extração e cálculo de indicadores fundamentais (Liquidez, Margens, Endividamento) a partir de dados brutos (Balanço e DRE).
-    *   *Por que:* É a base de qualquer decisão de crédito. Sem os dados estruturados, não há análise.
 
 2.  **Task 6: Compare liquidity, profitability, and credit histories with similar establishments**
-    *   *O que faz:* Benchmarking. Compara os indicadores da empresa analisada com a média de mercado de empresas do mesmo setor/porte.
-    *   *Por que:* Um número isolado não diz muito. Saber que a margem é 5% é bom ou ruim? Depende se a média do setor é 2% ou 10%.
 
 3.  **Task 4: Prepare reports that include the degree of risk**
-    *   *O que faz:* Consolidação das análises anteriores em um parecer textual com recomendação.
-    *   *Por que:* É o entregável final. O analista precisa de um resumo pronto para tomada de decisão rápida.
 
 ##  Arquitetura e Stack Tecnológica
 
 A solução foi desenhada utilizando uma abordagem híbrida: **Lógica Determinística + Inteligência Generativa**.
 
 *   **Python (Core Logic):**
-    *   Utilizado para o processamento pesado e cálculos matemáticos. Não deixamos a IA "alucinar" contas.
+    *   Utilizado para o processamento e cálculos matemáticos.
     *   Scripts: `analise_credito.py` (cálculos) e manipulação de JSONs.
 *   **Agentes de IA (Raciocínio):**
     *   Responsáveis por interpretar os dados, entender a intenção do usuário e gerar os insights textuais.
     *   **Google Agent Development Kit (ADK):** Implementado em `my_agent/`, focado em uma estrutura robusta de agentes.
-    *   **LangChain + Groq (Llama 3):** Implementado em `langchain_agent.py`, demonstrando flexibilidade de modelos e uso de *Tools* para conectar a IA aos dados.
+    *   **LangChain + Groq (openai/gpt-oss-120b):** Implementado em `langchain_agent.py`, demonstrando flexibilidade de modelos e uso de *Tools* para conectar a IA aos dados.
 *   **n8n (Orquestração):**
     *   Utilizado (conceitualmente/externamente) para gatilhos de entrada (ex: recebimento de um novo pedido de crédito) e conexão dos fluxos.
 
@@ -79,7 +73,7 @@ python3 langchain_agent.py
 **Exemplos de perguntas:**
 *   "Qual a situação de liquidez desta empresa?"
 *   "Compare a margem líquida da empresa com o mercado."
-*   "Gere um relatório de risco resumido."
+*   "Gere um relatório resumido."
 
 ### 2. Executando o Agente Google ADK
 
@@ -89,6 +83,6 @@ python3 my_agent/agent.py
 
 ##  Decisões de Design
 
-1.  **Separação de Responsabilidades:** O cálculo financeiro (Liquidez Corrente = Ativo Circulante / Passivo Circulante) é feito via código Python puro (`analise_credito.py`). A IA apenas *chama* essa função. Isso garante 100% de precisão nos números.
+1.  **Separação de Responsabilidades:** O cálculo financeiro (Liquidez Corrente = Ativo Circulante / Passivo Circulante) é feito via código Python (`analise_credito.py`). A IA apenas *chama* essa função. Isso garante 100% de precisão nos números.
 2.  **Uso de Tools:** Os agentes não "leem" o arquivo inteiro de uma vez para tentar adivinhar. Eles possuem ferramentas específicas (`obter_indicadores`, `comparar_benchmark`) que buscam a informação precisa quando solicitada.
 3.  **Escalabilidade:** A estrutura permite que, ao receber 10x mais duplicatas, o sistema processe os dados automaticamente e entregue ao analista apenas o relatório final comparativo, reduzindo drasticamente o tempo de análise manual.
