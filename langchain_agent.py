@@ -5,6 +5,8 @@ from langchain_groq import ChatGroq
 from langchain_core.tools import tool
 from langchain.agents import create_agent
 from langchain_core.messages import HumanMessage
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
 try:
     import analise_credito
@@ -17,7 +19,7 @@ except ImportError:
         sys.exit(1)
 
 @tool
-def obter_indicadores_financeiros():
+def getFinancial():
     """
     Calcula e retorna os indicadores financeiros (liquidez corrente e margem líquida)
     do cliente analisado, utilizando a lógica definida em analise_credito.py.
@@ -35,7 +37,7 @@ def obter_indicadores_financeiros():
     }
 
 @tool
-def obter_dados_brutos():
+def getData():
     """
     Retorna o dicionário completo de dados brutos carregados do arquivo empresa_dados.json.
     Útil para consultar campos específicos que não estão nos indicadores calculados.
@@ -43,7 +45,7 @@ def obter_dados_brutos():
     return analise_credito.dados
 
 @tool
-def comparar_benchmark():
+def compare_benchmark():
     """
     Compara os indicadores financeiros da empresa atual com a média do mercado (benchmark).
     Lê o arquivo benchmark.json e calcula a média dos indicadores das empresas similares.
@@ -92,6 +94,51 @@ def comparar_benchmark():
         }
     }
 
+@tool
+def gerar_relatorio_pdf(texto_relatorio: str):
+    """
+    Gera um arquivo PDF com o relatório de análise de crédito.
+    Recebe o texto completo do relatório e salva como 'relatorio_analise_credito.pdf'.
+    Retorna o caminho do arquivo gerado.
+    """
+    filename = "relatorio_analise_credito.pdf"
+    c = canvas.Canvas(filename, pagesize=letter)
+    width, height = letter
+    
+    c.setFont("Helvetica-Bold", 16)
+    c.drawString(50, height - 50, "Relatório de Análise de Crédito")
+    
+    c.setFont("Helvetica", 12)
+    y_position = height - 80
+    
+    lines = texto_relatorio.split('\n')
+    for line in lines:
+        words = line.split(' ')
+        current_line = ""
+        for word in words:
+            if c.stringWidth(current_line + " " + word, "Helvetica", 12) < (width - 100):
+                current_line += " " + word
+            else:
+                c.drawString(50, y_position, current_line)
+                y_position -= 15
+                current_line = word
+                if y_position < 50:
+                    c.showPage()
+                    c.setFont("Helvetica", 12)
+                    y_position = height - 50
+        
+        if current_line:
+            c.drawString(50, y_position, current_line)
+            y_position -= 15
+            
+        if y_position < 50:
+            c.showPage()
+            c.setFont("Helvetica", 12)
+            y_position = height - 50
+            
+    c.save()
+    return f"Relatório PDF gerado com sucesso: {os.path.abspath(filename)}"
+
 def main():
     if "GROQ_API_KEY" not in os.environ:
         print("Aviso: A variável de ambiente GROQ_API_KEY não está definida.")
@@ -101,14 +148,15 @@ def main():
         model_name="openai/gpt-oss-120b"
     )
 
-    tools = [obter_indicadores_financeiros, obter_dados_brutos, comparar_benchmark]
+    tools = [getFinancial, getData, compare_benchmark, gerar_relatorio_pdf]
 
     system_prompt = (
         "Você é um analista de crédito experiente. "
         "Você tem acesso a dados financeiros de uma empresa através de ferramentas. "
-        "Use 'obter_indicadores_financeiros' para ver a saúde financeira básica. "
-        "Use 'obter_dados_brutos' se precisar de detalhes específicos do balanço ou DRE que não estão nos indicadores. "
-        "Use 'comparar_com_benchmark' para ver como a empresa se sai em relação aos concorrentes. "
+        "Use 'getFinancial' para ver a saúde financeira básica. "
+        "Use 'getData' se precisar de detalhes específicos do balanço ou DRE que não estão nos indicadores. "
+        "Use 'compare_benchmark' para ver como a empresa se sai em relação aos concorrentes. "
+        "Use 'gerar_relatorio_pdf' para criar um arquivo PDF com o parecer final da análise. "
         "Responda de forma clara e profissional."
     )
 

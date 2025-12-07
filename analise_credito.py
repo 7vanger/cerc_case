@@ -51,33 +51,33 @@ class ClienteAnalisado:
     id_cliente: str
     dados_financeiros: DadosFinanceiros
     
-def parse_balanco(d):
+def partse_balance(d):
     return BalancoPatrimonial(**d)
 
 def parse_dre(d):
     return Dre(**d)
 
-def parse_demonstracoes(d):
+def partse_statements(d):
     return Demonstracoes(
-        balanco_patrimonial=parse_balanco(d["balanco_patrimonial"]),
+        balanco_patrimonial=partse_balance(d["balanco_patrimonial"]),
         dre=parse_dre(d["dre"])
     )
 
 
-def parse_financeiro(d):
+def partse_financial(d):
     return DadosFinanceiros(
         ano_referencia=d["ano_referencia"],
-        demonstracoes=parse_demonstracoes(d["demonstracoes"])
+        demonstracoes=partse_statements(d["demonstracoes"])
     )
 
-def parse_cliente(d):
+def partse_client(d):
     return ClienteAnalisado(
         id_cliente=d["id_cliente"],
-        dados_financeiros=parse_financeiro(d["dados_financeiros"])
+        dados_financeiros=partse_financial(d["dados_financeiros"])
     )
 
 
-cliente = parse_cliente(dados['cliente_analisado'])
+cliente = partse_client(dados['cliente_analisado'])
 liq_corr = cliente.dados_financeiros.demonstracoes.balanco_patrimonial.liquidez_corrente()
 marg_liq = cliente.dados_financeiros.demonstracoes.dre.margem_liquida()
 

@@ -72,33 +72,5 @@
         "percentual_inadimplencia_maior_90d_12m": 0.025
       }
     }
-  ],
-  "benchmark_setorial_resumido": {
-    "setor": "Comércio atacadista de alimentos",
-    "uf": "SP",
-    "porte_referencia": "Médio e Grande",
-    "fonte_dados": "Base interna fictícia e estudos setoriais fictícios",
-    "indicadores_medios": {
-      "margem_liquida_media": 0.031,
-      "margem_operacional_media": 0.091,
-      "liquidez_corrente_media": 1.37,
-      "liquidez_geral_media": 1.23,
-      "endividamento_total_medio": 0.65,
-      "retorno_sobre_patrimonio_liquido_medio": 0.162,
-      "cobertura_juros_media": 3.40,
-      "percentual_inadimplencia_maior_90d_12m_medio": 0.025
-    },
-    "faixas_comparativas": {
-      "liquidez_corrente": {
-        "abaixo_da_media": "< 1.2",
-        "na_faixa_normal": "1.2 - 1.6",
-        "acima_da_media": "> 1.6"
-      },
-      "endividamento_total": {
-        "baixo": "<= 0.55",
-        "moderado": "0.56 - 0.70",
-        "elevado": "> 0.70"
-      }
-    }
-  }
+  ]
 }

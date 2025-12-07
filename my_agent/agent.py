@@ -3,7 +3,7 @@ import os
 import json
 from google.adk.agents.llm_agent import Agent
 
-def obter_dados_empresa() -> dict:
+def getCompany() -> dict:
     """
     Acessa o arquivo empresa_dados.json e retorna seu conteúdo.
     Use esta função para obter dados brutos para cálculos e respostas.
@@ -18,7 +18,7 @@ def obter_dados_empresa() -> dict:
     except FileNotFoundError:
         return {"erro": "Arquivo empresa_dados.json não encontrado."}
 
-def comparar_benchmark() -> dict:
+def compare_benchmark() -> dict:
     """
     Compara os indicadores da empresa com o benchmark de mercado.
     Retorna um comparativo de Liquidez Corrente e Margem Líquida.
@@ -83,6 +83,6 @@ root_agent = Agent(
     model='gemini-2.5-flash',
     name='root_agent',
     description="Agente especialista em análise de crédito e dados financeiros.",
-    instruction="Você é um assistente financeiro. Use 'obter_dados_empresa' para ler os dados do cliente e 'comparar_benchmark' para comparar com o mercado.",
-    tools=[obter_dados_empresa, comparar_benchmark],
+    instruction="Você é um assistente financeiro. Use 'getCompany' para ler os dados do cliente e 'compare_benchmark' para comparar com o mercado.",
+    tools=[getCompany, compare_benchmark],
 )
