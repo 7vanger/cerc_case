@@ -86,3 +86,7 @@ python3 my_agent/agent.py
 1.  **Separação de Responsabilidades:** O cálculo financeiro (Liquidez Corrente = Ativo Circulante / Passivo Circulante) é feito via código Python (`analise_credito.py`). A IA apenas *chama* essa função. Isso garante 100% de precisão nos números.
 2.  **Uso de Tools:** Os agentes não "leem" o arquivo inteiro de uma vez para tentar adivinhar. Eles possuem ferramentas específicas (`obter_indicadores`, `comparar_benchmark`) que buscam a informação precisa quando solicitada.
 3.  **Escalabilidade:** A estrutura permite que, ao receber 10x mais duplicatas, o sistema processe os dados automaticamente e entregue ao analista apenas o relatório final comparativo, reduzindo drasticamente o tempo de análise manual.
+
+# Links
+* link do chat n8n: https://vanger7.app.n8n.cloud/webhook/a3c1fc4a-8918-4ae8-8feb-591b9a4fed36/chat
+* link do video: https://www.youtube.com/watch?v=OUOnsR4UtZA
