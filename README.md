@@ -20,15 +20,15 @@ Para criar um fluxo de automação coerente e funcional, selecionei as seguintes
 
 A solução foi desenhada utilizando uma abordagem híbrida: **Lógica Determinística + Inteligência Generativa**.
 
-*   **Python (Core Logic):**
+*   **Python:**
     *   Utilizado para o processamento e cálculos matemáticos.
     *   Scripts: `analise_credito.py` (cálculos) e manipulação de JSONs.
-*   **Agentes de IA (Raciocínio):**
+*   **Agentes de IA:**
     *   Responsáveis por interpretar os dados, entender a intenção do usuário e gerar os insights textuais.
-    *   **Google Agent Development Kit (ADK):** Implementado em `my_agent/`, focado em uma estrutura robusta de agentes.
-    *   **LangChain + Groq (openai/gpt-oss-120b):** Implementado em `langchain_agent.py`, demonstrando flexibilidade de modelos e uso de *Tools* para conectar a IA aos dados.
-*   **n8n (Orquestração):**
-    *   Utilizado (conceitualmente/externamente) para gatilhos de entrada (ex: recebimento de um novo pedido de crédito) e conexão dos fluxos.
+    *   **Google Agent Development Kit (ADK):** Implementado em `my_agent/`.
+    *   **LangChain + Groq (openai/gpt-oss-120b):** Implementado em `langchain_agent.py`.
+*   **n8n:**
+    *   Utilizado (conceitualmente/externamente) para gatilhos de entrada.
 
 # Google ADK e Langchain arquitetura
 <img width="1305" height="436" alt="image" src="https://github.com/user-attachments/assets/e8845765-d434-4164-a384-7db56bfa199d" />
